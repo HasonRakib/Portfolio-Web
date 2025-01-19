@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hason Rakib Porfolio</title>
+    <link rel="stylesheet" href="styles.css">
+     <!-- Custom Favicon -->
+     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+</head>
+<body>
+    <canvas id="particles"></canvas>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <span class="moon">🌙</span>
+                        <span class="sun">☀️</span>
+                    </div>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 
+            Hero section / Landing page
+            This is the first section visitors see when they arrive at the portfolio.
+            It contains:
+            - The owner's name as the main heading
+            - A tagline highlighting key professional traits
+            - Two call-to-action buttons for primary user paths:
+                1. Contact form
+                2. Project showcase
+        -->
+        <section id="home">
+            <h1>Hason Rakib</h1>
+            <p class="tagline">Programming Enthusiast | Creative Thinker | Problem Solver</p>
+            <div class="cta-container">
+                <a href="#contact" class="cta-button">Get in Touch</a>
+                <a href="#projects" class="cta-button secondary">View My Work</a>
+            </div>
+        </section>
+
+        <!-- 
+            About Section
+            This section provides a comprehensive personal introduction with three main components:
+            1. Profile Container:
+               - Profile picture
+               - Professional badges highlighting key roles/traits
+            
+            2. About Text Container:
+               - Greeting Box: Personal introduction and professional background
+               - Mission Statement: Professional goals and approach
+               - Life Mosaic: Personal interests and hobbies displayed in a grid
+            
+            The layout is designed to create a balanced mix of professional credentials
+            and personal touches, helping visitors connect on both a professional
+            and personal level.
+        -->
+        <section id="about">
+            <h2>The Story So Far...</h2>
+            <div class="about-content">
+                <div class="profile-container">
+                    <!-- <img src="profile-picture.jpg" alt="HR" class="profile-picture">-->
+                    <div class="profile-badges">
+                        <span class="badge">🚀 Full-Stack Dev</span>
+                        <span class="badge">🎨 Tech Enthusiast</span>
+                        <span class="badge">💡 Problem Solver</span>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <div class="greeting-box">
+                        <h3 class="wave">👋 Hey there, digital explorer!</h3>
+                        <p class="intro-text">I'm Hason Rakib, a passionate full-stack developer with a knack for creating user-friendly and visually appealing web applications. With a strong foundation in both front-end and back-end technologies, I specialize in building dynamic and responsive websites that deliver seamless user experiences.</p>
+                        <p class="intro-text">Of course Web development isnt my only skill, I also have a good knowledge of Python, Java, and SQL.</p>
+                        <p class="intro-text">I'm a dedicated learner and a quick adapter, always eager to embrace new challenges and technologies. My journey in the tech world is fueled by a love for innovation and a desire to make a positive impact through my work.</p>
+                    </div>
+
+                    <div class="journey-box">
+                        <h3>🎯 My Mission</h3>
+                        <p>Transforming wild ideas into elegant, user-friendly digital solutions. Whether it's websites, apps that amaze, or software that simplifies – I'm your code-wielding creative partner.</p>
+                        <p>I'm a dedicated learner and a quick adapter, always eager to embrace new challenges and technologies.</p>
+                    </div>
+
+                    <div class="life-mosaic">
+                        <h3>🎨 Life Outside the Code</h3>
+                        <div class="hobby-grid">
+                            <div class="hobby-item">
+                                <span class="hobby-icon">♟️</span>
+                                <p>I enjoy a good game of chess</p>
+                            </div>
+                            <div class="hobby-item">
+                                <span class="hobby-icon">🎮</span>
+                                <p>Video games are my go to</p>
+                            </div>
+                            <div class="hobby-item">
+                                <span class="hobby-icon">⚔️</span>
+                                <p>Warhammer 40k is my favorite; for the Emperor of Mankind😂</p>
+                            </div>
+                            <div class="hobby-item">
+                                <span class="hobby-icon">🔭</span>
+                                <p>Something about the stars and the universe is always interesting</p>
+                            </div>
+                            <div class="hobby-item">
+                                <span class="hobby-icon">📚</span>
+                                <p>Parsing stories one page at a time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            Projects Section
+            This section showcases featured projects in a responsive grid layout.
+            Each project card contains:
+            
+            1. Project Image Container:
+               - Featured image
+               - Overlay with technology stack badges
+            
+            2. Project Content:
+               - Project title
+               - Project description
+               - Action links (Live Demo and Source Code)
+            
+            Features:
+            - Hover effects on project cards for enhanced interactivity
+            - Tech stack badges to highlight technologies used
+            - Consistent layout across different project types
+            - Clear call-to-action links for both demo and source code
+            
+            The grid layout automatically adjusts based on screen size,
+            ensuring optimal viewing experience across all devices.
+        -->
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Project cards with enhanced structure and hover effects -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/pexels-shvetsa-4482900.jpg" alt="E-commerce Platform Preview">
+                        <div class="project-overlay">
+                            <div class="tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>A fully responsive e-commerce website with user authentication, product catalog, and payment integration.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link github"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/alvaro-reyes-qWwpHwip31M-unsplash.jpg" alt="Task Management App Preview">
+                        <div class="project-overlay">
+                            <div class="tech-stack">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>CSS Grid</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A drag-and-drop task management application with real-time updates and team collaboration features.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link github"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/freddy-g-m3OuPu9oTuY-unsplash.jpg" alt="restaurant-app">
+                        <div class="project-overlay">
+                            <div class="tech-stack">
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>MERN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Restaurant Management App</h3>
+                        <p>A comprehensive restaurant management system featuring menu customization, order tracking, and real-time kitchen notifications.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link github"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            Skills Section
+            This section displays professional competencies in a structured, visual format.
+            The skills are organized into three main categories:
+            
+            1. Front-end Technologies:
+               - Core web technologies (HTML, CSS, JavaScript)
+               - Modern frameworks (React, Vue.js)
+            
+            2. Back-end Technologies:
+               - Server-side technologies (Node.js, Express.js)
+               - Programming languages (Python, Java)
+               - Database technologies (SQL)
+            
+            3. Tools & Other Skills:
+               - Version control (Git, GitHub)
+               - Development tools (AWS, Figma)
+               - Project management (Notion)
+            
+            Features:
+            - Visual skill level indicators using CSS custom properties (--level)
+            - Animated entrance effects using AOS (Animate On Scroll) library
+            - Responsive grid layout for different screen sizes
+        -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Front-end</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-item">HTML5</span><span class="skill-level" style="--level: 90%"></span></li>
+                        <li><span class="skill-item">CSS3</span><span class="skill-level" style="--level: 85%"></span></li>
+                        <li><span class="skill-item">JavaScript</span><span class="skill-level" style="--level: 88%"></span></li>
+                        <li><span class="skill-item">React</span><span class="skill-level" style="--level: 82%"></span></li>
+                        <li><span class="skill-item">Next.js</span><span class="skill-level" style="--level: 75%"></span></li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Back-end</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-item">Node.js</span><span class="skill-level" style="--level: 10%"></span></li>
+                        <li><span class="skill-item">Express.js</span><span class="skill-level" style="--level: 10%"></span></li>
+                        <li><span class="skill-item">Python</span><span class="skill-level" style="--level: 05%"></span></li>
+                        <li><span class="skill-item">Java</span><span class="skill-level" style="--level: 70%"></span></li>
+                        <li><span class="skill-item">SQL</span><span class="skill-level" style="--level: 65%"></span></li>
+                    </ul>
+                </div>
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Tools [&] Others</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-item">Git</span><span class="skill-level" style="--level: 15%"></span></li>
+                        <li><span class="skill-item">GitHub</span><span class="skill-level" style="--level: 80%"></span></li>
+                        <li><span class="skill-item">Notion</span><span class="skill-level" style="--level: 75%"></span></li>
+                        <li><span class="skill-item">Visual Studio</span><span class="skill-level" style="--level: 10%"></span></li>
+                        <li><span class="skill-item">Vs Code</span><span class="skill-level" style="--level: 65%"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            Contact Section
+            A user-friendly contact form that allows visitors to send messages directly.
+            The form includes:
+            
+            1. Form Fields:
+               - Name input (required)
+               - Email input (required)
+               - Message textarea (required)
+            
+            2. Features:
+               - Simple, clean layout for better user experience
+               - Form validation using HTML5 attributes
+               - Clear labels for accessibility
+               - Responsive design that works on all devices
+            
+            The form is designed to be straightforward and inviting,
+            encouraging visitors to reach out for collaborations,
+            opportunities, or questions.
+        -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form action="https://formsubmit.co/326c645e65d933c769705f39e5df9940 " method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hason Rakib. All rights reserved.</p>
+        <div class="social-links">
+            <ul class="social-buttons">
+                <li><a href="#" class="social-btn"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/HasonRakib" class="social-btn"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+</body>
+</html>
